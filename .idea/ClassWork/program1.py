@@ -1,0 +1,11 @@
+(str) = 'Hello I am learning string manipulation.'
+print(str)
+print(str[0])
+print(str[2])
+print(str[0:5])
+print(str[0:5],str[6:8])
+print(str*10)
+print(str[-3])
+print(str[:-10])
+print(str[-10:])
+print(len(str))
