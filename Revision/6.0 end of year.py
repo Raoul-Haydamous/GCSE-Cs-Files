@@ -48,4 +48,41 @@ def task2():
             print(p1score)
         print(p1score)
 
-task2()
+def eoy5():
+    product = 0
+    checkDigit = 0
+    total = 0
+    multiplier = 10
+    modulus = 0
+    isbn = []
+    check = ''
+    count = 1
+    isbn2 = []
+    count2 = 0
+    isbn3 = 0
+    
+    print('Type in the digits of your ISBN number')
+    for i in range(9):
+        check = int(input(f"Digit {count}:  "))
+        count+= 1
+        isbn.append(check)
+    
+    
+    for n in range(10,1,-1):
+        isbn2.append(isbn[count2]*n)
+        count2+=1
+    isbn3 = sum(isbn2)
+    modulus = isbn3%11 
+    checkDigit = 11-modulus 
+    
+    if checkDigit == 11:
+        isbn.append(0)
+        print(isbn)
+    if checkDigit == 10:
+        isbn.append('X')
+        print(isbn)
+    else:
+        isbn.append(checkDigit)
+        print(checkDigit)
+        print(isbn)
+eoy5()
