@@ -74,16 +74,16 @@ def program6():
 #Program7: Extend program 3 to find the Highest Number
 def program7():
     import random
-    numbers = []
+    numbers = [109]
     
     for i in range(100):
         numbers.append(random.randint(0,200))
     numbers = sorted(numbers)
     
-    find = 109 in numbers
-    if find == True:
-        print('Number',numbers.index(109),"in the sequence")
-    if find == False:
+    num = 109
+    if num in numbers:
+        print('Number 109 in the sequence')
+    else:
         print('109 not in sequence')
     
     print(numbers)
@@ -98,20 +98,20 @@ def program8():
         numbers.append(random.randint(0,200))
     numbers = sorted(numbers)
     
-    find = 109 in numbers
-    if find == True:
-        print('Number',numbers.index(109),"in the sequence")
-    if find == False:
-        print('109 not in sequence')
+    num = 109
+    if num in numbers:
+        print('Number 109 in the sequence\n')
+    else:
+        print('109 not in sequence\n')
     
-    print(numbers[0],"is the smallest in sequence.")
-    print(max(numbers), "is the largest in sequence")
+    print(numbers[1],"is the smallest in sequence.")
+    print(max(numbers), "is the largest in sequence\n")
     
     dupes = []
     for i in range(1,len(numbers)):
         if numbers[i] == numbers[i-1] and numbers[i] not in dupes:
             dupes.append(numbers[i])
-    print(dupes)
+    print(f"These numbers are duplicates:{dupes}. \n \n This is the original array: {numbers}")
 program8()
 #Program 9:
 #The program below allows a user to add temperatures for each month
