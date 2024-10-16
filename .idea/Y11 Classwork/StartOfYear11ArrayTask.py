@@ -19,11 +19,7 @@ def program2():
         animals[i] = input('Give me an animal.')
     print(animals)
 
-
-
-#Program 3: Write a program that adds 100 random numbers (Max value=200) to a list
-#and it prints it
-    
+#Program 3: Write a program that adds 100 random numbers (Max value=200) to a list and it prints it
 def program3():
     import random
     numbers = []
@@ -31,6 +27,7 @@ def program3():
         numbers.append(random.randint(0,200))
     print(numbers)
 
+#Program 4: Extend program 3 and sort the list in ascending order
 def program4():
     import random
     numbers = []
@@ -38,11 +35,6 @@ def program4():
         numbers.append(random.randint(0,200))
     numbers = sorted(numbers)
     print(numbers)
-    #Program 4: Extend program 3 and sort the list in ascending order
-    
-
-    
-
 
 #Program 5: Extend program 3 and search if the number 109 is in the list
 def program5():
@@ -71,6 +63,7 @@ def program6():
     if find == False:
         print('109 not in sequence')
     print(numbers[0],"is the smallest in sequence.")
+
 #Program7: Extend program 3 to find the Highest Number
 def program7():
     import random
@@ -89,6 +82,7 @@ def program7():
     print(numbers)
     print(numbers[0],"is the smallest in sequence.")
     print(max(numbers), "is the largest in sequence")
+
 #Program 8: Extend program 3 to find the numbers that have duplicates
 def program8():
     import random
@@ -118,10 +112,6 @@ program8()
 #Write a program that allows a user to input temperatures for each month in the temperatures array
 #Extend the program to print each month and it's related temp
 #Find the Highest temperature and it's month
-
 def program9():
     months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
     temperatures = [0]*12
-    
-
-
