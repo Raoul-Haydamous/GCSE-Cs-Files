@@ -118,11 +118,9 @@ def activityH():
             else:
                 print('invalid input')
 
-activityH()
-
 def activityH_GPT():
     
-    #Put my code into ai to see how it can be improved and to add comments for explination
+    #Put my code into ai to see how it can be improved and to add comments for explanation.
     
     while True:
         # Initialize checks at the start of each loop
@@ -173,5 +171,3 @@ def activityH_GPT():
                 check4 = 1  # Break out of the confirmation loop
             else:
                 print("Invalid input. Please type 'y' or 'n'.")
-
-
