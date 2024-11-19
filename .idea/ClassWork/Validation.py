@@ -170,4 +170,4 @@ def activityH_GPT():
                 check1 = check2 = check3 = 0
                 check4 = 1  # Break out of the confirmation loop
             else:
-                print("Invalid input. Please type 'y' or 'n'.")
+                print("Invalid input. Please type 'y' or 'n'. ")
