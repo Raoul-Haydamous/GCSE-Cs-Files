@@ -114,4 +114,4 @@ program8()
 #Find the Highest temperature and it's month
 def program9():
     months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-    temperatures = [0]*12
+    temperature = [0]*12
